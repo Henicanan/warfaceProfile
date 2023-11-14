@@ -1,0 +1,57 @@
+:root {
+  /* Z-INDEX */
+  /* Обычные элементы, которые должны перекрывать другие */
+  --z-index-0: 0;
+  --z-index-1: 1;
+  --z-index-2: 2;
+
+  /* Сайдбар */
+  --z-index-3: 3;
+  --z-index-4: 4;
+  --z-index-5: 5;
+
+  /* Модалки */
+  --z-index-6: 6;
+  --z-index-7: 7;
+  --z-index-8: 8;
+
+  /* Уведомления */
+  --z-index-9: 9;
+  --z-index-10: 10;
+  --z-index-11: 11;
+
+  /* Все что выше */
+  --z-index-12: 12;
+  --z-index-max: 10000;
+
+  --black-white-black: #232326;
+  --black-white-base: #323237;
+  --black-white-gray-800: #444448;
+  --black-white-gray-700: #5b5b63;
+  --black-white-gray-650: #868693;
+  --black-white-gray-600: #9f9fac;
+  --black-white-gray-500: #b1b1bb;
+  --black-white-gray-400: #bdbdcb;
+  --black-white-gray-300: #d7d7e3;
+  --black-white-gray-10: #ebebf1;
+  --black-white-white: #fff;
+
+  --secondary-gray: #f6f7fa;
+  --secondary-phantom-white: #e8e8ff;
+
+  --primary-default: #1758fa;
+  --primary-hover: #1c1cd4;
+  --primary-active: #1111b6;
+
+  --error-500: #e52121;
+  --error-50: #ffecec;
+
+  --successful-500: #31bc01;
+  --successful-50: #e8ffe0;
+
+  --warm-500: #e2c00c;
+  --warm-50: #fff6de;
+
+  /* BOX SHADOW */
+  --section-shadow: 4px 8px 20px 0px #bfc2ce40;
+}
