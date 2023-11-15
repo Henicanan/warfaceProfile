@@ -21,6 +21,7 @@ const finished = computed(() => {
     return value.completion_time
   })
 })
+
 const unfinished = computed(() => {
   return validAchievements.value.filter((value) => {
     return !value.completion_time
@@ -67,7 +68,8 @@ watchDebounced(
       <div class="wrapper">
         <div class="list">
           <div class="list-header">
-            <p class="acheivement-list-title">Полученные достижения</p>
+            <p class="acheivement-list-title">Полученные достижения:</p>
+            <div class="counter-received">({{ finished.length }})</div>
           </div>
           <ul class="acheivement-list">
             <el-skeleton v-if="isLoading" />
@@ -81,7 +83,8 @@ watchDebounced(
         </div>
         <div class="list">
           <div class="list-header">
-            <p class="acheivement-list-title">Не полученные достижения</p>
+            <p class="acheivement-list-title">Не полученные достижения:</p>
+            <div class="counter-received">({{ unfinished.length }})</div>
           </div>
           <ul class="acheivement-list">
             <el-skeleton v-if="isLoading" />
@@ -162,6 +165,11 @@ watchDebounced(
   font-weight: 500;
   font-size: 125%;
   color: var(--black-white-gray-700);
+}
+
+.counter-received {
+  margin-top: 5px;
+  font-size: 20px;
 }
 
 .card {
